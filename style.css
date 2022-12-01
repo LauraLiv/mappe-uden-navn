@@ -1,0 +1,101 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*************** img *********************/
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 1rem;
+}
+
+/*************** body *********************/
+
+body {
+  font-family: "Kanit", sans-serif;
+  background-color: white;
+}
+
+/*************** header *********************/
+
+header {
+  background-color: rgb(170, 141, 128);
+  padding: 0.5rem 2rem;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0.5rem;
+  gap: 30px;
+  overflow-x: auto;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 700;
+  color: black;
+}
+
+/*************** main *********************/
+
+h1 {
+  color: black;
+  font-size: 4rem;
+  text-align: center;
+}
+
+h2 {
+  color: black;
+  font-size: 2rem;
+  padding-left: 1rem;
+}
+
+p {
+  color: black;
+  font-size: 18px;
+  padding: 1rem;
+}
+
+/*************** video *********************/
+
+video {
+  padding: 1rem;
+  place-content: center;
+}
+
+/*************** burger *********************/
+
+nav {
+  --less-than: 600;
+  --burger-lines: black;
+  --burger-border: black;
+}
+
+/*************** grid *********************/
+
+@media (min-width: 800px) {
+  div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid_2_1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .grid_1_2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+}
